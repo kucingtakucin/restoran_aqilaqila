@@ -1,6 +1,6 @@
-package com.example.servingwebcontent.Repository;
+package com.example.servingwebcontent.Repositories;
 
-import com.example.servingwebcontent.Model.Menu;
+import com.example.servingwebcontent.Models.Menu;
 
 import org.springframework.data.repository.CrudRepository;
 

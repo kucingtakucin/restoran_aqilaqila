@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.Controller.Admin;
+package com.example.servingwebcontent.Controllers.Admin;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
