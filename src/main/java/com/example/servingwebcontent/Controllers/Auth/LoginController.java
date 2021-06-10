@@ -1,4 +1,4 @@
-package com.example.servingwebcontent.Controllers;
+package com.example.servingwebcontent.Controllers.Auth;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

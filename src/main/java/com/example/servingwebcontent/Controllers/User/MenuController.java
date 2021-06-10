@@ -1,13 +1,13 @@
-package com.example.servingwebcontent.Controllers.Admin;
+package com.example.servingwebcontent.Controllers.User;
 
 import java.util.Optional;
 
 import com.example.servingwebcontent.Models.Menu;
 import com.example.servingwebcontent.Repositories.MenuRepository;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,26 +16,25 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class MenuController {
     
     @Autowired
     private MenuRepository menuRepository;
 
-    @GetMapping("/admin/menu")
-    public String index(Model model){
-		return "Admin/Menu/menu";	
+    @GetMapping("/menu")
+    public String index() {
+		return "User/Menu/menu";	
     }
 
-    @GetMapping("/admin/menu/data")
+    @GetMapping("/menu/data")
     public @ResponseBody Iterable<Menu> data() {
         // This returns a JSON or XML with the users
         return menuRepository.findAll();
     }
 
-    @PostMapping("/admin/menu") // Map ONLY POST Requests
+    @PostMapping("/menu") // Map ONLY POST Requests
     public @ResponseBody Menu insert (
 		@RequestBody @Validated Menu menu
 	) {
@@ -44,14 +43,14 @@ public class MenuController {
 		return menuRepository.save(menu);
     }
 
-	@GetMapping("/admin/menu/{id}")
+	@GetMapping("/menu/{id}")
 	public @ResponseBody Optional<Menu> show (
 		@PathVariable("id") Integer id
 	) {
 		return menuRepository.findById(id);
 	}
 
-	@PutMapping("/admin/menu/{id}")
+	@PutMapping("/menu/{id}")
 	public @ResponseBody ResponseEntity<Menu> update (
 		@PathVariable("id") Integer id,
 		@RequestBody @Validated Menu menu
@@ -63,7 +62,7 @@ public class MenuController {
 			}).orElseGet(() -> ResponseEntity.notFound().build());
 	}
 
-	@DeleteMapping("/admin/menu/{id}")
+	@DeleteMapping("/menu/{id}")
 	public @ResponseBody ResponseEntity<Menu> delete (
 		@PathVariable("id") Integer id,
 		@RequestBody @Validated Menu menu
