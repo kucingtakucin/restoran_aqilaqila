@@ -1,0 +1,64 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Invoice </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div th:insert="fragments/header :: header"></div>
+<section class="text-gray-400 bg-gray-900 body-font">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white">NOTA PEMESANAN</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Restoran AQILAQILA</p>
+        </div>
+        <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+            <table class="table-auto w-full text-left whitespace-no-wrap">
+                <thead>
+                    <tr>
+                        <th
+                            class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded-tl rounded-bl">
+                            Nama</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800">Harga
+                        </th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800">
+                            Jumlah</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded-tr rounded-br">Total
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border-t-2 border-gray-800 px-4 py-3 text-white">Telur Gulung</td>
+                        <td class="border-t-2 border-gray-800 px-4 py-3 text-white">Rp1000,00</td>
+                        <td class="border-t-2 border-gray-800 px-4 py-3 text-white">10</td>
+                        <td class="border-t-2 border-gray-800 px-4 py-3 text-white">Rp10.000,00</td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">Cilok</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">Rp500,00</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">10</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">Rp5.000,00</td>
+                        </tr>
+                    <tr>
+                        <td class="border-t-2 border-b-2 border-gray-800 px-4 py-3 font-medium title-font text-white">Total</td>
+                        <td class="border-t-2 border-b-2 border-gray-800 px-4 py-3 text-white"></td>
+                        <td class="border-t-2 border-b-2 border-gray-800 px-4 py-3 text-white"></td>
+                        <td class="border-t-2 border-b-2 border-gray-800 px-4 py-3 text-white">Rp15.000,00</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+            <button
+                class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Cetak</button>
+        </div>
+    </div>
+</section>
+    </main>
+    <div th:insert="fragments/footer :: footer"></div>
+</body>
+
+</html>
