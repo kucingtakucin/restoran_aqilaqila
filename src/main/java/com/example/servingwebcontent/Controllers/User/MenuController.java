@@ -10,4 +10,12 @@ public class MenuController {
 	public String index(){
 		return "User/Menu/menu";	
     }
+    @GetMapping("/makanan")
+	public String makanan(){
+		return "User/Menu/makanan";	
+    }
+    @GetMapping("/minuman")
+	public String minuman(){
+		return "User/Menu/minuman";	
+    }
 }
