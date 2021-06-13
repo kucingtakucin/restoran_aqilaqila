@@ -1,13 +1,13 @@
-package com.example.servingwebcontent.Controllers.User;
+package com.example.servingwebcontent.Controllers.Auth;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class InvoiceController {
+public class RegisterController {
     
-    @GetMapping("/invoice")
+    @GetMapping("/register")
     public String index() {
-        return "User/Invoice/invoice";
+        return "Auth/register";
     }
 }
