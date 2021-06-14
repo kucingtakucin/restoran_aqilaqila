@@ -13,6 +13,7 @@ public class Menu {
     private String nama;
     private String deskripsi;
     private String harga;
+    private String kategori;
     private String foto;
 
     public Integer getId() {
@@ -45,6 +46,14 @@ public class Menu {
 
     public void setHarga(String harga) {
         this.harga = harga;
+    }
+
+    public String getKategori() {
+        return kategori;
+    }
+
+    public void setKategori(String kategori) {
+        this.kategori = kategori;
     }
 
     public String getFoto() {
