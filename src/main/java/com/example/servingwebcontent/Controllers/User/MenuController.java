@@ -1,5 +1,6 @@
 package com.example.servingwebcontent.Controllers.User;
 
+<<<<<<< HEAD
 import java.util.Optional;
 
 import com.example.servingwebcontent.Models.Menu;
@@ -16,10 +17,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
+=======
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+>>>>>>> origin/main
 
 @Controller
 public class MenuController {
     
+<<<<<<< HEAD
     @Autowired
     private MenuRepository menuRepository;
 
@@ -74,3 +80,17 @@ public class MenuController {
 			}).orElseGet(() -> ResponseEntity.notFound().build());
 	}
 }
+=======
+    @GetMapping("/menu")
+	public String index(){
+		return "User/Menu/menu";	
+    }
+    
+    @GetMapping("/create")
+	public String create(){
+		return "User/Menu/create";	
+    }
+
+
+}
+>>>>>>> origin/main
