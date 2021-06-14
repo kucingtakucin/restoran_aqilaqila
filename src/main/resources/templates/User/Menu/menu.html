@@ -7,36 +7,138 @@
 <body>
     <div th:insert="fragments/header :: header"></div>
     <main>
-        <section class="text-gray-400 bg-gray-900  body-font">
-            <div class="container px-8 py-24 mx-auto">
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Menu</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Menu terdiri dari beberapa makanan dan minuman</p>
+          </div>
+          <button class="flex mx-auto mt-10 mb-10 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="window.location.href='/create'">Tambah Data</button>
               <div class="flex flex-wrap -m-4">
-                <div class="p-4 md:w-1/2">
-                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://blogpictures.99.co/makanan-khas-indonesia-header.png" alt="blog">
-                    <div class="p-6">
-                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                      <h1 class="title-font text-lg font-medium mb-3">Foods</h1>
-                      <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore nam perferendis et eius omnis error illum nostrum ad sed, a, autem dolor illo ipsa. Provident optio cumque expedita impedit odit?</p>
-                      <div class="flex items-center flex-wrap "> 
-                          <button onclick='/menu/minuman' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">More..</button>
-                      </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://doyanresep.com/wp-content/uploads/2019/12/resep-gudeg-nangka-300x292.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MAKANAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Gudheg Kampung</h1>
+                      <p class="leading-relaxed">Gudheg Solo dengan lauk Ayam Goreng Kampung yang nikmat.<br> Rp. 35.000 </p>
                     </div>
                   </div>
                 </div>
-                <div class="p-4 md:w-1/2">
-                  <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://static.tokopedia.net/blog/wp-content/uploads/2019/08/minuman-khas-Indonesia-13-Tempo.jpg" alt="blog">
-                    <div class="p-6">
-                      <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2>
-                      <h1 class="title-font text-lg font-medium mb-3">Beverages</h1>
-                      <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatem facere sint esse! Exercitationem autem odit corporis voluptate veniam accusantium inventore! Voluptatum similique tempore repudiandae beatae placeat assumenda? Reiciendis, tempore.</p>
-                      <div class="flex items-center flex-wrap">
-                        <button onclick='minuman.html' class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">More..</button>
-                      </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://i1.wp.com/resepkoki.id/wp-content/uploads/2020/03/Resep-Nasi-Bakar-Bandung.jpg?fit=563%2C600&ssl=1">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MAKANAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Sega Bakar Bandeng</h1>
+                      <p class="leading-relaxed">Nasi Bakar bungkus daun pisang yang gurih dengan lauk Bandeng Bakar yang manis.<br> Rp. 40.000 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="http://3.bp.blogspot.com/-aw81MsVM6mQ/Uw7vKReEDKI/AAAAAAAAAW4/21yqyFsgqHw/s280/Cap+Cay+Kuah+Nikmat.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MAKANAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Cap Cay Ndeso</h1>
+                      <p class="leading-relaxed">Tumisan sayur dimasak Cap Cay yang membuat anda rindu masakan rumah.<br> Rp. 25.000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="http://2.bp.blogspot.com/-7iEc3YH0GlE/UTi4HdDmdII/AAAAAAAAAXI/kFtJmjUZWRc/s320/Bebek-Goreng.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MAKANAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Bebek Balado</h1>
+                      <p class="leading-relaxed">Potongan Bebek yang digoreng dengan bumbu balado pedas nikmat.<br> Rp. 29.000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://i2.wp.com/resepkoki.id/wp-content/uploads/2019/10/Resep-Selat-solo-small.jpg?fit=520%2C390&ssl=1">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MAKANAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Selat Solo</h1>
+                      <p class="leading-relaxed">Selat Solo berisi daging, kentang, selada, wortel, telur, tomat, dan saus mustard.<br> Rp. 32.000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://i.pinimg.com/736x/0a/3b/75/0a3b75579dc9066d861844eacff949d3.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MAKANAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Sup Iga / Iga Goreng</h1>
+                      <p class="leading-relaxed">Iga yang dimasak kuah dan goreng (bisa request).<br> Rp. 38.000</p>
                     </div>
                   </div>
                 </div>
               </div>
+
+              <!-- Minuman -->
+              <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.yourphnompenh.com/order/files/2016/05/Original-Mactha-Green-Tea-Frappe3.95-scaled.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MINUMAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Green Tea</h1>
+                      <p class="leading-relaxed">Teh hijau yang menyegarkan.<br> Rp. 25.000 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="http://3.bp.blogspot.com/-jG2-WwabQiQ/VnrMviM21tI/AAAAAAAAAEE/L49j0nplj7I/s320/Mocha%2BFloat.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MINUMAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Mocca Float</h1>
+                      <p class="leading-relaxed">Mocca float yang nikmat dan menyegarkan.<br> Rp. 23.000 </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://moslemlifestyle.com/data/upload/id/keyword-10/Minum-Teh-Panas-atau-Es-Teh.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MINUMAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Teh Panas/Es</h1>
+                      <p class="leading-relaxed">Teh dengan kualitas terbaik di Indonesia.<br> Rp. 6.000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://yukorder.com/wp-content/uploads/2019/10/Teh-Tarik-Panen-Lentera.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MINUMAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Teh Tarik</h1>
+                      <p class="leading-relaxed">Campuran teh dan susu dengan kualitas terbaik.<br> Rp. 29.000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://www.coffindo.id/images/news/news_20161021110814.jpg">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MINUMAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Espresso</h1>
+                      <p class="leading-relaxed">Kopi favorit semua orang di dunia yang nikmat.<br> Rp. 15.000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                  <div class="flex relative">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://awsimages.detik.net.id/community/media/visual/2017/04/13/559e7538-65ae-46ad-b478-6e7d6390d486_169.jpg?w=700&q=90">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                      <h2 class="tracking-widest text-sm title-font font-medium text-indigo-400 mb-1">MINUMAN</h2>
+                      <h1 class="title-font text-lg font-medium text-white mb-3">Latte</h1>
+                      <p class="leading-relaxed">Espresso dengan tambahan susu dan dihias dengan milk foam.<br> Rp. 26.000</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
